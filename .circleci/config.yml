@@ -41,6 +41,7 @@ jobs:
       # run tests!
       - run: lein test
       - run: |
+          lein codox
           git config --global user.email "tvanhens@gmail.com"
           git config --global user.name "Tyler van Hensbergen"
           lein release
