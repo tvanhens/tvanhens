@@ -2,7 +2,7 @@
   "Simple entity modeling, useful for following clean architecture principles"
   (:require [clojure.spec.alpha :as s]))
 
-(defn ns-entity-spec []
+(defn- ns-entity-spec []
   (let [ns-name (str *ns*)]
     (->> ns-name
          (re-find #"^.*\.(.*)$")
