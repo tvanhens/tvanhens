@@ -9,6 +9,7 @@
             [lonocloud/lein-unison "0.1.13"]]
   :release-tasks
   [["vcs" "assert-committed"]
+   ["codox"]
    ["change" "version" "leiningen.release/bump-version" "release"]
    ["vcs" "commit"]
    ["vcs" "tag" "--no-sign"]
