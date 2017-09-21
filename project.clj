@@ -7,15 +7,14 @@
   :lein-release {:deploy-via :clojars}
   :plugins [[lein-codox "0.10.3"]
             [lein-release "1.0.9"]]
-  :release-tasks [["vcs" "assert-committed"]
-                  ["change" "version"
-                   "leiningen.release/bump-version" "release"]
-                  ["vcs" "commit"]
-                  ["vcs" "tag" "--no-sign"]
-                  ["deploy"]
-                  ["file-replace" "README.md" "\\[api \"" "\"]" "version"]
-                  ["change" "version" "leiningen.release/bump-version"]
-                  ["vcs" "commit"]]
+  :release-tasks
+  [["vcs" "assert-committed"]
+   ["change" "version" "leiningen.release/bump-version" "release"]
+   ["vcs" "commit"]
+   ["vcs" "tag" "--no-sign"]
+   ["deploy"]
+   ["change" "version" "leiningen.release/bump-version"]
+   ["vcs" "commit"]]
   :codox {:output-path "docs"}
   :deploy-repositories
   {"clojars" {:url           "https://clojars.org/repo"
