@@ -24,7 +24,7 @@
      :branch         "master"}]}
   :codox {:output-path "docs"}
   :deploy-repositories
-  {"clojars" {:url           "https://clojars.org/repo"
-              :sign-releases false
-              :username      "tvanhens"
-              :password      :env/CLOJARS_PASSWORD}})
+  {"releases" {:url           "https://clojars.org/repo"
+               :sign-releases false
+               :username      "tvanhens"
+               :password      :env/CLOJARS_PASSWORD}})
