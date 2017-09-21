@@ -5,4 +5,4 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0-beta1"]]
   :lein-release {:deploy-via :clojars}
-  :plugins [[lein-release "1.0.5"]])
+  :plugins [[lein-release "1.0.9"]])
