@@ -18,9 +18,10 @@
    ["change" "version" "leiningen.release/bump-version"]
    ["vcs" "commit"]]
   :unison
-  [{:git            "git@github.com:tvanhens/track.git"
-    :release-script "script/release.sh"
-    :branch         "master"}]
+  {:repos
+   [{:git            "git@github.com:tvanhens/track.git"
+     :release-script "script/release.sh"
+     :branch         "master"}]}
   :codox {:output-path "docs"}
   :deploy-repositories
   {"clojars" {:url           "https://clojars.org/repo"
