@@ -41,6 +41,8 @@ jobs:
       # run tests!
       - run: lein test
       - run: |
+          git config --global user.email "tvanhens@gmail.com"
+          git config --global user.name "Tyler van Hensbergen"
           lein release
           git commit --amend -m"$(shell git log -1 --pretty=%B) [skip ci]"
           git push origin master
