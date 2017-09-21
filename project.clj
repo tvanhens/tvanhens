@@ -14,7 +14,7 @@
    ["vcs" "commit"]
    ["vcs" "tag" "--no-sign"]
    ["deploy"]
-   ["unison" "release-projects"]
+   ["unison" "release-projects" "tvanhens"]
    ["change" "version" "leiningen.release/bump-version"]
    ["vcs" "commit"]]
   :unison
