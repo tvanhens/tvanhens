@@ -1,4 +1,4 @@
-(defproject tvanhens "0.2.3-SNAPSHOT"
+(defproject tvanhens "0.2.2-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -15,7 +15,9 @@
                   ["file-replace" "README.md" "\\[api \"" "\"]" "version"]
                   ["change" "version" "leiningen.release/bump-version"]
                   ["vcs" "commit"]]
-  :repositories {"clojars" {:url           "https://clojars.org/repo"
-                            :sign-releases false
-                            :username      "tvanhens"
-                            :password      :env/CLOJARS_PASSWORD}})
+  :auth {:repository-auth
+         {#"https://clojars.org/repo"
+          {:username "tvanhens"
+           :password :env/CLOJARS_PASSWORD}}}
+  :repositories {"clojars" {:url           "https://clojars.org"
+                            :sign-releases false}})
