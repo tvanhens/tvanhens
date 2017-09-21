@@ -1,4 +1,4 @@
-(defproject tvanhens "0.2.10-SNAPSHOT"
+(defproject tvanhens "0.2.11-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
