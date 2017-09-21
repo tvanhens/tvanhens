@@ -14,4 +14,8 @@
                   ["deploy"]
                   ["file-replace" "README.md" "\\[api \"" "\"]" "version"]
                   ["change" "version" "leiningen.release/bump-version"]
-                  ["vcs" "commit"]])
+                  ["vcs" "commit"]]
+  :auth {:repository-auth
+         {#"https://clojars.org/repo"
+          {:username "tvanhens"
+           :password :env/CLOJARS_PASSWORD}}})
