@@ -16,6 +16,8 @@
                   ["change" "version" "leiningen.release/bump-version"]
                   ["vcs" "commit"]]
   :auth {:repository-auth
-         {#"https://clojars.org/repo"
+         {#"https://clojars.org"
           {:username "tvanhens"
-           :password :env/CLOJARS_PASSWORD}}})
+           :password :env/CLOJARS_PASSWORD}}}
+  :repositories {"releases" {:url           "https://clojars.org"
+                             :sign-releases false}})
