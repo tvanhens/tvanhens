@@ -5,8 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0-beta1"]]
   :lein-release {:deploy-via :clojars}
-  :plugins [[lein-codox "0.10.3"]
-            [lein-release "1.0.9"]
+  :plugins [[lein-codox            "0.10.3"]
             [lonocloud/lein-unison "0.1.13"]]
   :release-tasks
   [["vcs" "assert-committed"]
